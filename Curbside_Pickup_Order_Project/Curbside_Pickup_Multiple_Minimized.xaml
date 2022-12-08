@@ -1,0 +1,771 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,8552" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="33">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="30">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="830,8487" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Browser" Name="chrome" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" Hidden="True" sap:VirtualizedContainerService.HintSize="788,8395" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[chrome]" Url="https://mcstaging.helzberg.com/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="754,8294" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:Window" Name="window" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WindowScope SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" ApplicationWindow="[window]" ContinueOnError="False" DisplayName="Attach Window 'chrome.exe Engagement,'" sap:VirtualizedContainerService.HintSize="712,8202" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="f00297c2d142c042e782d070ae262cf9" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds - G*' /&gt;">
+              <ui:WindowScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="678,8056" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MinimizeWindow ContinueOnError="False" DisplayName="Minimize Window" sap:VirtualizedContainerService.HintSize="636,22" sap2010:WorkflowViewState.IdRef="MinimizeWindow_3" Window="[window]" />
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="636,106" sap2010:WorkflowViewState.IdRef="Click_68" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f69249b8-547e-4733-bd82-a10d45826a97" InformativeScreenshot="da42d91e37d0ef728f743aefe5b0aec8" Selector="&lt;html app='chrome.exe' title='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds' url='https://mcstaging.helzberg.com/' /&gt;&lt;webctrl tag='BUTTON' type='button' class='action switch' parentclass='customer-name' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="636,106" sap2010:WorkflowViewState.IdRef="Click_69" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="76e09ab2-1d06-4b54-b364-54dc56679fd6" InformativeScreenshot="e1d12b0fd71a3b496631537bf0e671fa" Selector="&lt;html app='chrome.exe' title='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds' /&gt;&lt;webctrl aaname='Sign In' tag='A' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DeselectAfter="True" DisplayName="Type Into 'INPUT  email'" EmptyField="True" sap:VirtualizedContainerService.HintSize="636,134" sap2010:WorkflowViewState.IdRef="TypeInto_73" SimulateType="True" Text="BJRoseburrough@helzberg.com">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f532dcdd-c98b-4a6b-87cc-7ad9d67577e5" InformativeScreenshot="7a158d64a6621a13a95619839f92865d" Selector="&lt;html app='chrome.exe' title='Customer Login' url='https://mcstaging.helzberg.com/customer/account/login/referer/aHR0cHM6Ly9tY3N0YWdpbmcuaGVsemJlcmcuY29tLw%2C%2C/' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset' parentid='login-form' tag='FIELDSET' class='fieldset login' parentclass='form form-login' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;div&amp;gt;div' parentid='login-form' tag='DIV' class='control' parentclass='field email required' /&gt;&lt;webctrl tag='INPUT' type='email' aaname='Email' class='input-text' parentclass='control' parentid='login-form' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DeselectAfter="True" DisplayName="Type Into 'INPUT  pass'" EmptyField="True" sap:VirtualizedContainerService.HintSize="636,134" sap2010:WorkflowViewState.IdRef="TypeInto_74" SimulateType="True" Text="Arsene2019&lt;^&gt;">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3356dd89-6ab6-4a52-b716-e0bed96b38c3" InformativeScreenshot="c7a2bd932e0b08ef74f6a34b353d2b0a" Selector="&lt;html app='chrome.exe' title='Customer Login' url='https://mcstaging.helzberg.com/customer/account/login/referer/aHR0cHM6Ly9tY3N0YWdpbmcuaGVsemJlcmcuY29tLw%2C%2C/' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset' parentid='login-form' tag='FIELDSET' class='fieldset login' parentclass='form form-login' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;div&amp;gt;div' parentid='login-form' tag='DIV' class='control' parentclass='field password required' /&gt;&lt;webctrl tag='INPUT' type='password' aaname='Password' class='input-text' parentclass='control' parentid='login-form' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="8000" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="636,106" sap2010:WorkflowViewState.IdRef="Click_70" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="52bb934c-5197-43c3-aef3-322c08fd4c8d" InformativeScreenshot="1e321a3c43a3ad910962c30009287d1b" Selector="&lt;html app='chrome.exe' title='Customer Login' url='https://mcstaging.helzberg.com/customer/account/login/referer/aHR0cHM6Ly9tY3N0YWdpbmcuaGVsemJlcmcuY29tLw%2C%2C/' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset' parentid='login-form' tag='FIELDSET' class='fieldset login' parentclass='form form-login' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;div&amp;gt;div' parentid='login-form' tag='DIV' class='primary' parentclass='actions-toolbar' /&gt;&lt;webctrl id='send2' tag='BUTTON' type='submit' parentclass='primary' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="636,106" sap2010:WorkflowViewState.IdRef="Click_71" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="afbb5ce9-3b90-4284-a492-f0549a4d3524" InformativeScreenshot="5b28e83a5b95945508c99b5723f666a7" Selector="&lt;html app='chrome.exe' title='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds' url='https://mcstaging.helzberg.com/' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div' parentid='maincontent' tag='DIV' class='safe-shopping-header-list-border safe-shopping-header-list-borderright' parentclass='safe-shopping-header-list' /&gt;&lt;webctrl aaname='no-contact curbside pickup' parentid='maincontent' tag='SPAN' class='safe-shopping__banner__column--text' parentclass='safe-shopping-header-list-border safe-shopping-header-list-borderright' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="636,6970" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" WorkbookPath="Jewelry_List.xlsx">
+                      <ui:ExcelApplicationScope.Body>
+                        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,6861" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="jewelryList" />
+                              <Variable x:TypeArguments="ui:UiElement" Name="checkBox" />
+                              <Variable x:TypeArguments="x:String" Default="5454545454545454" Name="creditCardNumber" />
+                              <Variable x:TypeArguments="x:String" Name="cleanedCreditCardNumber" />
+                              <Variable x:TypeArguments="x:String" Name="cleanedCreditCardNumber1" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExcelReadRange AddHeaders="True" DataTable="[jewelryList]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="560,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_4" Range="A1" SheetName="Sheet1" />
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[jewelryList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,2746" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,2627" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Default="str" Name="product" />
+                                      <Variable x:TypeArguments="x:String" Default="7.5" Name="size" />
+                                      <Variable x:TypeArguments="x:String" Default="Oak Park Mall" Name="location" />
+                                      <Variable x:TypeArguments="x:Boolean" Name="locationExists" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[product]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item(0).ToString]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[size]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[Convert.ToDouble(CurrentRow.Item(1)).ToString("#.0")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[location]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item(2).ToString]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[Convert.ToDecimal(size)]" />
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[CurrentRow.Item(1)]" />
+                                    <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="5000" DisplayName="Type Into 'INPUT  search'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_75" SimulateType="True" Text="[product]">
+                                      <ui:TypeInto.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b34dcdc7-3cf3-444e-8b26-d091c2c3b20a" InformativeScreenshot="b82cff592b1f06ca53e8b0d86441af67" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl tag='INPUT' aaname='Search' parentclass='control' parentid='search_mini_form' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:TypeInto.Target>
+                                    </ui:TypeInto>
+                                    <ui:SendHotkey DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="5000" DisplayName="Send Hotkey 'INPUT  search'" EmptyField="False" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e44b54f5-9c71-4aea-b54d-f689819f7877" InformativeScreenshot="555632158db7349f3323e76de758c567" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl tag='INPUT' class='input-text' parentclass='control' parentid='search_mini_form' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                    </ui:SendHotkey>
+                                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="5000" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_87" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ee2ededa-9b46-4fbe-98a1-544f167e9485" InformativeScreenshot="89673cd0944e5881f6339b35b32000e8" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div' parentid='maincontent' tag='DIV' class='search results' parentclass='column main' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li' parentid='maincontent' tag='LI' class='item product product-item' parentclass='products list items product-items' /&gt;&lt;webctrl parentid='maincontent' tag='IMG' class='product-image-photo lazy lazy-loaded' parentclass='product-image-wrapper' src='https://mcstaging.helzberg.com*' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                    <ui:SelectItem AlterIfDisabled="{x:Null}" DelayAfter="{x:Null}" ContinueOnError="True" DelayBefore="5000" DisplayName="Select Item 'SELECT  attribute576'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="SelectItem_15" Item="[size]">
+                                      <ui:SelectItem.Items>
+                                        <scg:List x:TypeArguments="x:String" Capacity="32">
+                                          <x:String>Ring Size</x:String>
+                                          <x:String>6.0</x:String>
+                                          <x:String>6.5</x:String>
+                                          <x:String>7.0</x:String>
+                                          <x:String>7.5</x:String>
+                                          <x:String>8.0</x:String>
+                                          <x:String>8.5</x:String>
+                                          <x:String>9.0</x:String>
+                                          <x:String>9.5</x:String>
+                                          <x:String>10.0</x:String>
+                                          <x:String>10.5</x:String>
+                                          <x:String>11.0</x:String>
+                                          <x:String>11.5</x:String>
+                                          <x:String>12.0</x:String>
+                                          <x:String>12.5</x:String>
+                                          <x:String>13.0</x:String>
+                                          <x:String>13.5</x:String>
+                                          <x:String>14.0</x:String>
+                                        </scg:List>
+                                      </ui:SelectItem.Items>
+                                      <ui:SelectItem.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1bd64471-90ee-4906-a919-778b38dcde57" InformativeScreenshot="2adbbd3146c9967f0bfd216c0db2bf2c" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl tag='SELECT' class='super-attribute-select' parentclass='control' parentid='product-options-wrapper' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:SelectItem.Target>
+                                    </ui:SelectItem>
+                                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'A  javascript:void(0);'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_73" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2f39690-b67d-4c4a-8525-83510062e825" InformativeScreenshot="5a4c2ff04d3558911554ad144fd01735" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main' id='maincontent' tag='MAIN' class='page-main' parentclass='page-wrapper' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='maincontent' tag='DIV' class='product-add-form' parentclass='product-info-main' /&gt;&lt;webctrl aaname='Select Location' parentid='curbside-radio' tag='SPAN' parentclass='curbside-open-modal-form' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  curbside-zipcode'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_76" Text="64114">
+                                      <ui:TypeInto.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c1f2b2f-6a52-43c7-886e-030b0a233683" InformativeScreenshot="4a84b37c24da0ec03273fcd7cb19ffb9" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl id='curbside-zipcode' tag='INPUT' type='text' parentclass='field name required' parentid='curbside_zipcode' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:TypeInto.Target>
+                                    </ui:TypeInto>
+                                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_74" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb5f8f3b-220d-4d00-a6d5-2318ba649b80" InformativeScreenshot="f0e4e9f1301680812fa6b0fa07adf9b1" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl name='curbside-zipcode-submit' tag='BUTTON' type='submit' aaname='SEARCH' class='action submit primary' parentclass='actions-toolbar' parentid='curbside_zipcode' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                    <ui:UiElementExists DisplayName="Element Exists 'STRONG'" Exists="[locationExists]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                                      <ui:UiElementExists.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b63d6112-b698-4765-88bd-be89017495f4" InformativeScreenshot="4e204cbc274a4947e93b9229785824b7" Selector="[String.Format(&quot;&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl parentid='curbside-results' tag='STRONG' innertext='{0}' /&gt;&quot;, location)]" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:UiElementExists.Target>
+                                    </ui:UiElementExists>
+                                    <If Condition="[locationExists]" sap:VirtualizedContainerService.HintSize="484,282" sap2010:WorkflowViewState.IdRef="If_4">
+                                      <If.Then>
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="5000" DisplayName="Click 'BUTTON  52'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_75" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition Position="Center">
+                                              <ui:CursorPosition.OffsetX>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetX>
+                                              <ui:CursorPosition.OffsetY>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetY>
+                                            </ui:CursorPosition>
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="53d07d2d-3ac2-4a8a-9328-eb42b436f0a1" InformativeScreenshot="c58b87267c85f0fadd2ed4044eaad92c" Selector="[String.Format(&quot;&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li' parentid='curbside-results' tag='LI' innertext='                                                   {0}*' parentclass='instock' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div' parentid='curbside-results' tag='DIV' class='store-result-wrapper' parentclass='instock' /&gt;&lt;webctrl tag='BUTTON' aaname='SELECT' parentclass='store-result-wrapper' parentid='curbside-results' /&gt;&quot;, location)]" WaitForReady="COMPLETE">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                            </ui:Target>
+                                          </ui:Click.Target>
+                                        </ui:Click>
+                                      </If.Then>
+                                    </If>
+                                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_76" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fd313945-6b7f-471e-8c9c-c7aa9f34c5e1" InformativeScreenshot="a0ba1527735d982079180f0e0cd6be12" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='product_addtocart_form' tag='DIV' class='fieldset' parentclass='box-tocart' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='product_addtocart_form' tag='DIV' class='actions' parentclass='fieldset' /&gt;&lt;webctrl id='product-addtocart-button' tag='BUTTON' type='submit' aaname='Add to Bag' class='action primary tocart' parentclass='actions' parentid='product_addtocart_form' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'A  https://www.helzberg...'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_77" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bc81a0e0-de07-4081-afcc-c1071c2b903a" InformativeScreenshot="78582175dbfcc04b2b2a979643110a6d" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='add-to-cart-modal' tag='DIV' class='add-to-cart-cta' parentclass='modal-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='add-to-cart-modal' tag='DIV' class='add-to-cart-cta-view-bag' innertext='view bag' parentclass='add-to-cart-cta' /&gt;&lt;webctrl aaname='view bag' parentid='add-to-cart-modal' tag='A' href='https://mcstaging.helzberg.com/checkout/cart/' parentclass='add-to-cart-cta-view-bag' /&gt;" WaitForReady="COMPLETE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                    <ui:NavigateTo Browser="[chrome]" ContinueOnError="True" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="484,59" sap2010:WorkflowViewState.IdRef="NavigateTo_13" Url="https://mcstaging.helzberg.com" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  search'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_77" SimulateType="True">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92bccc78-ecde-4ff8-88c1-e67ed75dad6e" InformativeScreenshot="c2d35830894b785bb3a4857ee0b8e66e" Selector="&lt;html app='chrome.exe' title='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds' url='https://mcstaging.helzberg.com/' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' class='main-menu-search' parentclass='main-menu-container' /&gt;&lt;webctrl tag='INPUT' aaname='Search' class='input-text' parentclass='control' parentid='search_mini_form' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                              <ui:TypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" Value="" />
+                                </InArgument>
+                              </ui:TypeInto.Text>
+                            </ui:TypeInto>
+                            <ui:NavigateTo Browser="[chrome]" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="560,59" sap2010:WorkflowViewState.IdRef="NavigateTo_14" Url="https://mcstaging.helzberg.com/checkout/cart/" />
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_78" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="188875bb-45f5-4eb3-9843-099fc58dcb00" InformativeScreenshot="54a4b7ae20e6052ae27bc3139dd77600" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/cart/' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' parentid='maincontent' tag='UL' class='checkout methods items checkout-methods-items' parentclass='cart-summary' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li' parentid='maincontent' tag='LI' class='item' innertext='  Proceed to Checkout ' parentclass='checkout methods items checkout-methods-items' /&gt;&lt;webctrl parentid='maincontent' tag='BUTTON' type='button' aaname='Proceed to Checkout' class='action primary checkout' innertext='Proceed to Checkout' parentclass='item' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="2000" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_79" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0370c089-5b66-4721-b159-da1f7e96aa6a" InformativeScreenshot="071bac10d419c8a24d3e1ce25c2a034f" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='checkout-step-shipping' tag='DIV' class='shipping-address-items' parentclass='control' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='checkout-step-shipping' tag='DIV' class='shipping-address-item selected-item' parentclass='shipping-address-items' /&gt;&lt;webctrl aaname='         Ship Here     ' parentid='checkout-step-shipping' tag='BUTTON' type='button' class='action action-select-shipping-item' innertext='         Ship Here     ' parentclass='shipping-address-item selected-item' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="5000" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_80" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bcc6978d-cf74-4f68-9658-376e4c50ebc1" InformativeScreenshot="2c14320f5a0c5f12ed7803ed98def588" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-method-buttons-container' parentid='co-shipping-method-form' tag='DIV' class='actions-toolbar checkout-steps-toolbar' parentclass='form methods-shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' parentid='shipping-method-buttons-container' tag='DIV' class='primary' parentclass='actions-toolbar checkout-steps-toolbar' /&gt;&lt;webctrl parentid='shipping-method-buttons-container' tag='BUTTON' type='submit' aaname='                             Next                         ' class='button action continue primary' parentclass='primary' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  customer-email'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_78" Text="BJRoseburrough@helzberg.com">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="02b5603e-3fa1-453f-9fd9-e65a735a7bd5" InformativeScreenshot="2545bfd82596574b0847af634bde39ec" Selector="&lt;webctrl tag='INPUT' type='email' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  First Name'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_79" SimulateType="True" Text="Benjamin">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b546185c-d14c-41ab-bf9e-f6e70ca5e964" InformativeScreenshot="09c6b8b3008d83011caaf5f33ed0b4d9" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='co-shipping-form' parentid='opc-new-shipping-address' tag='FORM' class='form form-shipping-address' parentclass='modal-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-new-address-form' parentid='co-shipping-form' tag='DIV' class='fieldset address' parentclass='form form-shipping-address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' name='shippingAddress.firstname' parentid='shipping-new-address-form' tag='DIV' class='field _required' parentclass='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='shipping-new-address-form' parentname='shippingAddress.firstname' tag='DIV' class='control' parentclass='field _required' /&gt;&lt;webctrl tag='INPUT' type='text' class='input-text' css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' parentclass='control' parentid='shipping-new-address-form' parentname='shippingAddress.firstname' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  Last Name'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_80" SimulateType="True" Text="Roseburrough">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3b8975e-efba-4645-9638-fcff6b259716" InformativeScreenshot="c426d6cc4960d03a850da20db849d8ad" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-new-address-form' parentid='co-shipping-form' tag='DIV' class='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' name='shippingAddress.lastname' parentid='shipping-new-address-form' tag='DIV' class='field _required' parentclass='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='shipping-new-address-form' parentname='shippingAddress.lastname' tag='DIV' class='control' parentclass='field _required' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='Last Name' class='input-text' name='lastname' parentclass='control' parentid='shipping-new-address-form' parentname='shippingAddress.lastname' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  Address'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_81" SimulateType="True" Text="7647 Grand Avenue">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cf6c8526-63be-42dc-ad3c-898e90410d35" InformativeScreenshot="ef8a27a3a51717f4e821b4f8300592d7" Selector="&lt;html app='chrome.exe' title='Checkout' url='https://mcstaging.helzberg.com/checkout/#shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-new-address-form' parentid='co-shipping-form' tag='DIV' class='fieldset address' parentclass='form form-shipping-address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;fieldset' parentid='shipping-new-address-form' tag='FIELDSET' class='field street admin__control-fields required' parentclass='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='shipping-new-address-form' tag='DIV' class='control' parentclass='field street admin__control-fields required' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;fieldset&amp;gt;div&amp;gt;div' name='shippingAddress.street.0' parentid='shipping-new-address-form' tag='DIV' class='field _required' parentclass='control' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;fieldset&amp;gt;div&amp;gt;div&amp;gt;div' parentid='shipping-new-address-form' parentname='shippingAddress.street.0' tag='DIV' class='control' parentclass='field _required' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='Street Address: Line 1' class='input-text' parentclass='control' parentid='shipping-new-address-form' parentname='shippingAddress.street.0' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  City'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_82" SimulateType="True" Text="Kansas City">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ee77a69-2fcc-48a0-b512-df78cd089324" InformativeScreenshot="668f042fbcf200b549464850dcc9d4c6" Selector="&lt;html app='chrome.exe' title='Checkout' url='https://mcstaging.helzberg.com/checkout/#shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='co-shipping-form' parentid='opc-new-shipping-address' tag='FORM' class='form form-shipping-address' parentclass='modal-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-new-address-form' parentid='co-shipping-form' tag='DIV' class='fieldset address' parentclass='form form-shipping-address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' name='shippingAddress.city' parentid='shipping-new-address-form' tag='DIV' class='field _required' parentclass='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='shipping-new-address-form' parentname='shippingAddress.city' tag='DIV' class='control' parentclass='field _required' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='City' class='input-text' parentclass='control' parentid='shipping-new-address-form' parentname='shippingAddress.city' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'SELECT  State'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_83" SimulateType="True" Text="mo">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e7df052c-98b7-4457-8019-62e8abeaf5d2" InformativeScreenshot="49458f1b5ca3ee58bd5ae92763b4c67c" Selector="&lt;html app='chrome.exe' title='Checkout' url='https://mcstaging.helzberg.com/checkout/#shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='co-shipping-form' parentid='opc-new-shipping-address' tag='FORM' class='form form-shipping-address' parentclass='modal-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-new-address-form' parentid='co-shipping-form' tag='DIV' class='fieldset address' parentclass='form form-shipping-address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' name='shippingAddress.region_id' parentid='shipping-new-address-form' tag='DIV' class='field _required' parentclass='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='shipping-new-address-form' parentname='shippingAddress.region_id' tag='DIV' class='control' parentclass='field _required' /&gt;&lt;webctrl tag='SELECT' aaname='State' parentclass='control' parentid='shipping-new-address-form' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  Zip Code'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_84" SimulateType="True" Text="64114">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c2c17ee5-520e-4659-8219-587f54d52dfe" InformativeScreenshot="455eb2a9359c641edcb0939d923d669d" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div' id='opc-new-shipping-address' parentid='modal-content-22' tag='DIV' parentclass='modal-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='co-shipping-form' parentid='opc-new-shipping-address' tag='FORM' class='form form-shipping-address' parentclass='modal-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-new-address-form' parentid='co-shipping-form' tag='DIV' class='fieldset address' parentclass='form form-shipping-address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' name='shippingAddress.postcode' parentid='shipping-new-address-form' tag='DIV' class='field _required' parentclass='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='shipping-new-address-form' parentname='shippingAddress.postcode' tag='DIV' class='control' parentclass='field _required' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='Zip/Postal Code' class='input-text' parentclass='control' parentid='shipping-new-address-form' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  Phone Number'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_85" SimulateType="True" Text="4173858893">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b281598-90dc-4ad9-8c72-93ae3c092209" InformativeScreenshot="ea3cca7909e277f9554475fc30ed63fd" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='co-shipping-form' parentid='opc-new-shipping-address' tag='FORM' class='form form-shipping-address' parentclass='modal-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-new-address-form' parentid='co-shipping-form' tag='DIV' class='fieldset address' parentclass='form form-shipping-address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' name='shippingAddress.telephone' parentid='shipping-new-address-form' tag='DIV' class='field _required' parentclass='fieldset address' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='shipping-new-address-form' parentname='shippingAddress.telephone' tag='DIV' class='control _with-tooltip' parentclass='field _required' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='Phone Number' class='input-text' parentclass='control _with-tooltip' parentid='shipping-new-address-form' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="2000" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_81" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aea1cb53-36e5-4b78-99c3-3e39b8bb2707" InformativeScreenshot="573c38c265e53dd23327d487529b2d60" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div' tag='DIV' class='modal-inner-wrap' parentclass='modal-popup                 modal-slide                _inner-scroll _show' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;footer' tag='FOOTER' class='modal-footer' parentclass='modal-inner-wrap' /&gt;&lt;webctrl aaname='Ship Here' css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;footer&amp;gt;button' tag='BUTTON' type='button' class='action primary action-save-address' parentclass='modal-footer' /&gt;&lt;webctrl aaname='Ship Here' css-selector='body&amp;gt;div&amp;gt;aside&amp;gt;div&amp;gt;footer&amp;gt;button&amp;gt;span' tag='SPAN' parentclass='action primary action-save-address' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="2000" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_82" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bcc6978d-cf74-4f68-9658-376e4c50ebc1" InformativeScreenshot="2c14320f5a0c5f12ed7803ed98def588" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div' parentid='opc-shipping_method' tag='DIV' class='checkout-shipping-method' parentclass='checkout-shipping-method' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div' id='checkout-step-shipping_method' parentid='opc-shipping_method' tag='DIV' class='step-content' parentclass='checkout-shipping-method' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;form' id='co-shipping-method-form' parentid='checkout-step-shipping_method' tag='FORM' class='form methods-shipping' parentclass='step-content' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' id='shipping-method-buttons-container' parentid='co-shipping-method-form' tag='DIV' class='actions-toolbar checkout-steps-toolbar' parentclass='form methods-shipping' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' parentid='shipping-method-buttons-container' tag='DIV' class='primary' parentclass='actions-toolbar checkout-steps-toolbar' /&gt;&lt;webctrl aaname='                             Next                         ' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ol&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;button' parentid='shipping-method-buttons-container' tag='BUTTON' type='submit' class='button action continue primary' parentclass='primary' /&gt;&lt;webctrl parentid='shipping-method-buttons-container' tag='SPAN' parentclass='button action continue primary' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="560,22" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                            <ui:NavigateTo Browser="[chrome]" ContinueOnError="False" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="560,59" sap2010:WorkflowViewState.IdRef="NavigateTo_15" Url="https://www.google.com" />
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="560,22" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                            <ui:NavigateTo Browser="[chrome]" ContinueOnError="False" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="560,59" sap2010:WorkflowViewState.IdRef="NavigateTo_16" Url="https://mcstaging.helzberg.com/checkout/#payment" />
+                            <Assign sap:VirtualizedContainerService.HintSize="560,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[cleanedCreditCardNumber]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[Trim(creditCardNumber.Replace(" ", ""))]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="560,59" sap2010:WorkflowViewState.IdRef="SetToClipboard_4" Text="[cleanedCreditCardNumber]" />
+                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  chcybersource_cc...'" sap:VirtualizedContainerService.HintSize="560,154" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="v" KeyModifiers="Ctrl" SpecialKey="False">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc290046-8607-41ac-b5e3-617f20a8a638" InformativeScreenshot="ea35bd8349463fcd37e250e90ba19b40" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#payment' /&gt;&lt;webctrl tag='INPUT' type='tel' class='input-text' id='chcybersource_cc_number' parentclass='control' parentid='payment_form_chcybersource' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  chcybersource_e...'" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="SelectItem_16" Item="12 - December">
+                              <ui:SelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="16">
+                                  <x:String>Month</x:String>
+                                  <x:String>01 - January</x:String>
+                                  <x:String>02 - February</x:String>
+                                  <x:String>03 - March</x:String>
+                                  <x:String>04 - April</x:String>
+                                  <x:String>05 - May</x:String>
+                                  <x:String>06 - June</x:String>
+                                  <x:String>07 - July</x:String>
+                                  <x:String>08 - August</x:String>
+                                  <x:String>09 - September</x:String>
+                                  <x:String>10 - October</x:String>
+                                  <x:String>11 - November</x:String>
+                                  <x:String>12 - December</x:String>
+                                </scg:List>
+                              </ui:SelectItem.Items>
+                              <ui:SelectItem.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c49b867c-e9e8-4681-9036-d8b4bd121cd2" InformativeScreenshot="254632ac9eb8975c164bf2552a63421f" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#payment' /&gt;&lt;webctrl id='chcybersource_expiration' tag='SELECT' parentclass='control' parentid='chcybersource_cc_type_exp_div' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:SelectItem.Target>
+                            </ui:SelectItem>
+                            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  chcybersource_e...'" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="SelectItem_17" Item="2022">
+                              <ui:SelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="16">
+                                  <x:String>Year</x:String>
+                                  <x:String>2021</x:String>
+                                  <x:String>2022</x:String>
+                                  <x:String>2023</x:String>
+                                  <x:String>2024</x:String>
+                                  <x:String>2025</x:String>
+                                  <x:String>2026</x:String>
+                                  <x:String>2027</x:String>
+                                  <x:String>2028</x:String>
+                                  <x:String>2029</x:String>
+                                  <x:String>2030</x:String>
+                                  <x:String>2031</x:String>
+                                </scg:List>
+                              </ui:SelectItem.Items>
+                              <ui:SelectItem.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3fe0342b-c9c3-4fbe-a5f4-4718fd5f8f30" InformativeScreenshot="574d4292d3bb34f22322396c0009ac59" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#payment' /&gt;&lt;webctrl id='chcybersource_expiration_yr' tag='SELECT' parentclass='control' parentid='chcybersource_cc_type_exp_div' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:SelectItem.Target>
+                            </ui:SelectItem>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  chcybersource_cc...'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_86" SendWindowMessages="False" SimulateType="True" Text="234">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="27f7d2e0-b40e-46d0-a028-b744cbf7d8b1" InformativeScreenshot="91ff0338b5c39da1d288befe35b825a7" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#payment' /&gt;&lt;webctrl tag='INPUT' type='password' id='chcybersource_cc_cid' parentclass='control _with-tooltip' parentid='chcybersource_cc_type_cvv_div' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_83" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="50" OffsetY="31" Position="TopLeft" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86298301-1b6f-4037-9ae8-fd01e498631c" InformativeScreenshot="a2c42702124e0f3d7c11220500b703bb" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/#payment' /&gt;&lt;webctrl parentid='checkout-payment-method-load' tag='BUTTON' type='submit' aaname='Place Order' class='action primary checkout cybersource' parentclass='primary' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_84" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="9" OffsetY="10" Position="TopLeft" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0715d6e-f4fa-4507-a21b-f1763785ef7f" InformativeScreenshot="2d2e4cb3756e391500afc2f62c9a1544" Selector="&lt;html app='chrome.exe' url='https://mcstaging.helzberg.com/checkout/onepage/success/' /&gt;&lt;webctrl parentid='tt-comment-capture' tag='svg' class='tt-o-icon tt-o-icon--close tt-o-icon--xs' parentclass='tt-o-modal__close-btn tt-o-button tt-o-button--icon' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ExcelApplicationScope.Body>
+                    </ui:ExcelApplicationScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:WindowScope.Body>
+            </ui:WindowScope>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>

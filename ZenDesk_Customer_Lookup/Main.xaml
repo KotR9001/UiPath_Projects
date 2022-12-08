@@ -1,0 +1,271 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,4712" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="24">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="18">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="509,4647" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,4555" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://hdsl.helzberg.com/adfs/ls?RelayState=https%3A%2F%2Fhelzberg.zendesk.com%2Fagent%2Fdashboard&amp;brand_id=360000460773&amp;SAMLRequest=fZFBT8JAEIXv%2FIpm79t2CxbYtCUNxIQEjQH14G13O0jjdhd3tqj8ekuVBA9y%0AnXkv78032eyz0cEBHNbW5ISFMZkVgwxFo%2Fe8bP3OrOG9BfRBpzPI%2B0VOWme4%0AFVgjN6IB5F7xTXm34kkY872z3iqryYXlukMggvNdARIsFzk5GRyVSZWqeDuh%0ACmRMGQNJ5Y0EKtMpG8I4Uclk1OkRW1ga9ML4nCRxwmicUpY%2BshEfTvlo%2FEKC%0A5%2FN1XRYJynPY3BpsG3AbcIdawdN6lZOd93vkUbQDfZTgXsMjmArwLVS2iYRS%0AgBid6pGiR8T7eFdcs2XRpfKX7H3HYLl4sLpWX0Gptf2YOxAecuJdCyS4ta4R%0A%2Fn9qLGT9pK7otpdyaESty6pyXUUSFT%2Bpf19YDL4B%0A">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,4454" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="emailAddress" />
+              <Variable x:TypeArguments="x:String" Name="phoneNumber" />
+              <Variable x:TypeArguments="x:String" Name="firstName" />
+              <Variable x:TypeArguments="x:String" Name="lastName" />
+              <Variable x:TypeArguments="x:String" Name="city" />
+              <Variable x:TypeArguments="x:String" Name="state" />
+              <Variable x:TypeArguments="x:String" Name="zipCode" />
+              <Variable x:TypeArguments="x:String" Name="customerCode" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Email Address" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="What is the customer's email address?" Title="Email Address">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[emailAddress]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Phone Number" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="What is the customer's phone number?" Title="Phone Number">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[phoneNumber]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input First Name" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="What is the customer's first name?" Title="First Name">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[firstName]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Last Name" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="What is the customer's last name?" Title="Last Name">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[lastName]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input City" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="What is the customer's city?" Title="City">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[city]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input State" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="What is the customer's state?" Title="State">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[state]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Zip Code" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="What is the customer's zip code?" Title="Zip Code">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[zipCode]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Customer Code" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="What is the customer's customer code?" Title="Customer Code">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[customerCode]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  userNameInput'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="DOMAIN1\68228">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="38c5f844-94df-4dde-8aba-04beebc89eb3" InformativeScreenshot="be7c90d9b77006e5a3cc27ef9c46a50f" Selector="&lt;html app='chrome.exe' title='Sign In' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='loginForm' parentid='loginArea' tag='FORM' /&gt;&lt;webctrl tag='INPUT' parentid='userNameArea' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  passwordInput'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="Seiya1986*">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="42356424-0c6a-4b71-9737-866d71026c08" InformativeScreenshot="4bc0f175ccc87b69b2dd799b84d0f566" Selector="&lt;html app='chrome.exe' title='Sign In' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='loginForm' parentid='loginArea' tag='FORM' /&gt;&lt;webctrl tag='INPUT' type='password' parentid='passwordArea' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ae54b4e6-1b31-48ae-a2f3-95dc0d0a64f4" InformativeScreenshot="4a78a0320d5bc5e507fac042303be582" Selector="&lt;html app='chrome.exe' title='Sign In' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form' id='loginForm' parentid='loginArea' tag='FORM' /&gt;&lt;webctrl tag='SPAN' id='submitButton' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="13" OffsetY="9" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5679eb40-9beb-4903-a2af-4377ff13c3a6" InformativeScreenshot="5b8ac4f5bf4cc99842001bcd40dea15c" Selector="&lt;webctrl tag='SPAN' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  email'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="[emailAddress]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c337f5e6-9a48-4107-9068-200161ae4031" InformativeScreenshot="b5eb8eccba38ef085078a233a06c7a3d" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' class='app_view app-178721 apps_new_ticket_sidebar box' parentclass='app_view_wrapper' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' parentclass='app_view app-178721 apps_new_ticket_sidebar box' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' class='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-mb-xxs u-position-relative' parentclass='u-p-xs' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt' parentclass='u-mb-xxs u-position-relative' /&gt;&lt;webctrl tag='INPUT' aaname='Email' class='c-txt__input' parentclass='c-txt' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  phoneNumber'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[phoneNumber]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9acd27b-93ef-4fae-8e38-c82e852fbbdc" InformativeScreenshot="e6438a8032da62745de7136151d70ff9" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' parentclass='app_view_wrapper' title='Helzberg Diamonds - Agent' class='app_view app-178721 apps_new_ticket_sidebar box' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' parentclass='app_view app-178721 apps_new_ticket_sidebar box' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' class='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-mb-xxs u-mr-xs u-position-relative' parentclass='u-p-xs' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt' parentclass='u-mb-xxs u-mr-xs u-position-relative' /&gt;&lt;webctrl id='phoneNumber' tag='INPUT' aaname='Phone Number' parentclass='c-txt' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  firstName'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SimulateType="True" Text="[firstName]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e5d2a1ef-713d-4c06-b995-bc17036be1dd" InformativeScreenshot="0c7c887acb3f4874df0a9a438ccb2461" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' parentclass='app_view app-178721 apps_new_ticket_sidebar box' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' class='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' parentclass='u-position-relative' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='flex-grid' innertext='First Name  Last Name ' parentclass='u-p-xs' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-mb-xxs u-mr-xs u-position-relative' parentclass='flex-grid' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt c-txt--inline' parentclass='u-mb-xxs u-mr-xs u-position-relative' /&gt;&lt;webctrl id='firstName' tag='INPUT' parentclass='c-txt c-txt--inline' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  lastName'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[lastName]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0edbb5a0-2578-4648-9f63-b8e8d772040e" InformativeScreenshot="daf431c12c029d7a1aea24f8b14311e2" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' parentclass='app_view app-178721 apps_new_ticket_sidebar box' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' class='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' innertext='Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='flex-grid' innertext='First Name  Last Name ' parentclass='u-p-xs' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-mb-xxs u-position-relative' parentclass='flex-grid' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt c-txt--inline' innertext='Last Name ' parentclass='u-mb-xxs u-position-relative' /&gt;&lt;webctrl id='lastName' tag='INPUT' aaname='Last Name' class='c-txt__input' parentclass='c-txt c-txt--inline' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  city'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" SimulateType="True" Text="[city]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="21659206-98a6-4c2c-ad7a-b185dea20e10" InformativeScreenshot="00c6e3a677880caf166764c60e369b66" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' class='app_view app-178721 apps_new_ticket_sidebar box' parentclass='app_view_wrapper' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' parentclass='app_view app-178721 apps_new_ticket_sidebar box' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-mb-xxs u-position-relative' innertext='City ' parentclass='u-p-xs' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt' innertext='City ' parentclass='u-mb-xxs u-position-relative' /&gt;&lt;webctrl id='city' tag='INPUT' class='c-txt__input' parentclass='c-txt' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  state'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_9" SimulateType="True" Text="[state]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fbbf6239-c279-4354-a7c6-6f77416556a4" InformativeScreenshot="461e7f0e281e17e74b5bfc6e405cac53" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' parentclass='app_view app-178721 apps_new_ticket_sidebar box' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' class='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' parentclass='u-position-relative' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='flex-grid' innertext='State  Zip Code ' parentclass='u-p-xs' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-mb-xxs u-mr-xs u-position-relative' innertext='State ' parentclass='flex-grid' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt c-txt--inline' innertext='State ' parentclass='u-mb-xxs u-mr-xs u-position-relative' /&gt;&lt;webctrl id='state' tag='INPUT' aaname='State' class='c-txt__input' parentclass='c-txt c-txt--inline' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  zipCode'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" SimulateType="True" Text="[zipCode]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="583badcb-f2aa-424f-a695-41a428ecec89" InformativeScreenshot="28b81a2702e79062d9238b9ce1f68dd0" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' innertext='  Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' innertext='Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' innertext='Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='u-position-relative' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='flex-grid' innertext='State  Zip Code ' parentclass='u-p-xs' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-mb-xxs u-position-relative' innertext='Zip Code ' parentclass='flex-grid' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt c-txt--inline' innertext='Zip Code ' parentclass='u-mb-xxs u-position-relative' /&gt;&lt;webctrl id='zipCode' tag='INPUT' aaname='Zip Code' class='c-txt__input' parentclass='c-txt c-txt--inline' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2000" DisplayName="Type Into 'INPUT  miscID'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" SimulateType="True" Text="[customerCode]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0b13f9fb-13f5-4ac1-aee6-89e47cfdf6c9" InformativeScreenshot="ad5d536a4ba5d8a9bb2cdd54323ccb04" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' parentclass='app_view app-178721 apps_new_ticket_sidebar box' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' class='c-tab__panel' innertext='  Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' innertext='  Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' innertext='Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset' parentid='top' tag='FIELDSET' class='u-position-relative' innertext='Misc. ID ' parentclass='u-p-xs' /&gt;&lt;webctrl aaname=' ' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div' parentid='top' tag='DIV' class='c-txt' parentclass='u-position-relative' /&gt;&lt;webctrl id='miscID' tag='INPUT' aaname='Misc. ID' class='c-txt__input' parentclass='c-txt' parentid='top' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="570f11b7-ab34-478e-b9f4-f65f62b7afb1" InformativeScreenshot="658d079bb70989ca6391ecf3e5be0f7e" Selector="&lt;html app='chrome.exe' title='Helzberg Diamonds - Agent' /&gt;&lt;webctrl src='https://178721.apps.zdusercontent.com/178721/assets/1548279591-e*' tag='IFRAME' /&gt;&lt;webctrl aria-role='tabpanel' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' class='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div' tag='DIV' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div' id='top' tag='DIV' class='u-position-relative' innertext='  Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='c-tab__panel' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-position-relative' innertext='Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-p-xs' innertext='Email  Phone Number  First Name  Last Name  City  State  Zip Code  Misc. ID               Reset                         Search           ' parentclass='u-position-relative' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='top' tag='DIV' class='u-ta-center u-mt-lg l-btn-group flex-grid' parentclass='u-p-xs' /&gt;&lt;webctrl aaname='             Search           ' tag='BUTTON' class='c-btn c-btn--primary' parentclass='u-ta-center u-mt-lg l-btn-group flex-grid' parentid='top' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>

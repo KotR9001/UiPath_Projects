@@ -1,0 +1,191 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="888,1818.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="565.6,1753.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Engagement, Wedding Rings &amp; Fine Jewelry | Helzberg Diamonds" sap:VirtualizedContainerService.HintSize="522.4,1662.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="510.4,1440.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="467.2,1348" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" WorkbookPath="_Test Automation\StageTest_6_9_EDI OOS Report.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="455.2,1073.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRow DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="412,980.8" sap2010:WorkflowViewState.IdRef="ExcelForEachRow_3" Range="[Excel.Sheet(&quot;StageTest_6_9_EDI OOS Report&quot;)]" SaveAfterEachRow="True">
+                      <ueab:ExcelForEachRow.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence sap:VirtualizedContainerService.HintSize="400,791.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type in form field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,226.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" Text="[CurrentRow.ByField(&quot; URL&quot;)]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="147, 48, 1093, 24" ElementType="InputBox" FriendlyName="'mcstaging.helzberg.com/…'" FullSelectorArgument="&lt;ctrl name='Infinity X Infinity® 1/3 ct. tw. Diamond Dangle Earrings in Ster*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Infinity X Infinity® 1/3 ct. tw. Diamond Dangle Earrings in Ster*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" ImageBase64="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" InformativeScreenshot="443d305788b8a69d659f45f3bad9923e.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Infinity X Infinity® 1/3 ct. tw. Diamond Dangle Earrings in Ster*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'https://www.helzberg.co…'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="356.8,226.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" Text="[string.Format(&quot;{0}&quot;, &quot;[k(enter)]&quot;.ToString)]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="147, 48, 1115, 24" ElementType="InputBox" FriendlyName="'https://www.helzberg.co…'" FullSelectorArgument="&lt;ctrl name='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds - G*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds - G*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABF8AAAAcCAYAAAC3WRC1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAqQSURBVHhe7Z1Rbtw4EoZzlATIuRLkMYM9xMRzCDtncA4Q52GPkDhYzBkyyPsAGexstKoiKVUVS1K303La4+8DiGmJZLFYItus33Lmyc3v3wYKhUKhUCgUCoVCoVAoFMo+5ckAAAAAAAAAAAAn5+//DcOff31HfAEAAAAAAAAA2BPEFwAAAAAAAACAHUF8AQAAAAAAAADYEcQXAAAAAAAAAIAdQXwBAAAAAAAAANgRxBcAAAAAAAAAgB1BfAEAAAAAAAAA2JEF8eWP4f2bfw2Xt/XyXPjyYfj1zYfhS71s3F6dk69fh+uXz4c3H+vlkXy9fjU8vfhUr5b4sTEeLLdvh9dXn8s6+OVieB8XwgqyRl7/Mpax/5ebi+F1so5S7jDWqVHfZd6Hoj7LfMXvz8Pl+PnQ/XH0WHdB/Xs7FJeO8++n43z/SZzBmizIs+tjoftL199Y4j6TPdzqtPh5rPY16DpdqBcbv978Ua96zuvnBQAAAAA8Fu4svughOSRpcqhdO/T+KKn9c0iGHIgv+/ADgqAkfIeKLVuc3XqLnFY43WVPn30MV3jIvp+QWSTxsdD7Zq/FnxPZz43GVt8JfQaZ+FKEPPErXbOt31gQXwAAAADgvnlA4svyb1n3FHyOB/FlFyRxuqOAspbwHc3ZJ9+yT073VgTiS+Ah+34iJpGki0X2c8Ovx+Xv6+2+DVmTl1dRUC3Ci/RfFunF1mnFSQAAAACAQ9kQX8qBtvyGcz4Ey+G23Gu/RSzt53u1bXvjwL5qHhJoZ6vW6b2YLLc/OXHIuHWsr++GF89+G2Y94tPw5pkVKJpg0QsXHy+eO8GjCCD/PrBdFEqa/TL+Uy2vhuuvtVqxdc+HF6ZytlnstDatFH/8XHxdI/S3fn78bXj68t1wLfMx/XRs017ma31zaLxr27HM7aLffu5tfhpLrS/PzI6djemTtj6hk7Vh11Jr269VuWkTt2rrVpKz1s4mlGYsu46l1DFjopeu38aUBNbrmjTmCWnBi0cr/qrtdm8sOseQbNa534rN1s74Oo+V7On/iP0gPHTzyShzbLYub6yd4F83rhmv8z15Ll3c/djps1189sKa7yu4tRLiE9bR/OxrLHSMsc4+P3ev+l1trq3/go9p+V43PoV1c7Awof1sLOKzFPy9bL8UtvsqdQ3ozxSNRc/yGEI2DgAAAADA/qyKLzYR0YO9Oez6hLDQHXpbkmHaqZ12HQ7QX8akQD67NsrCgdn1b4KEXhSBQZL5SXQQwcMk+u7+LAIIIgyInUPbeZr44NuJ2FEkhWJn7ifXs0Dhx5zx99sYRthQMaRdl/ooiMTYWN/V/uTjSG2Tii9uLOHTcK0X1S/rv9qZY6HjmLGbCDONE9oXQrKYJZ82adR11yenE27d1OR6uq5rf2qfJaom4QxruPc1wfTJ9lHEtznS37h3NDZmn9bEu9VHf/ye7vfhtv/F37lP9XeKYbA5+nMZxpvGD77r2BKLNr7Oxc69jG2/k7TPUc9+zfcF1M/lNXJ7FepCLGzb/J5/xi0Ok59qs9WHGI7o92uon+f4ebidPm/QiS8xviP1mTX7Zey5zONu93XzDjG1+DUbifMFAAAAALgfDv+zo3DQ1oNySLq6Q292QLZ29HDtD+8p0ic5aMt41kdJ7FsSL5/fXL8bXjRBQZL6JgqIeNDuy+eLd8P1yyYmzCLNwe0cQegQVKyobcUPK3KMRL878cX2V5IxRkTIUDtd+xE7/86HDXuBpfvpuMF2N79ObPFilCLrxK21JPl09X79dvVuXXpbylp9l3CGvZKt+Y7a58C3KLz/R/p7gH9238ZYre/p5HsiksXDxXDdhvMn2lI7x83Vx2cjlpu+5/TJv/gVxpmwPmSxyO55v1fXf+pvP+ayWLHCQixk/pPAcvUh8b+i/X3dWl8X1/TZFvr4W7J4AgAAAADsz/2LL3rwNwd2aaOH7aXkpIzVH6aDHWESFSThl4Re/lsSeREMZnFhTvBVpBnvTwKIFSkObmdJhAwjSqj48Ky87eFKtaX1zm4iRmRjjDjfsjGa4DLFqZGNUWLWiyz52Epnt2DtdPOT2Gz4IuvKJ0tHJJ8jXb1bl96WslafJJzWvvO1JpdzMml8SBLPpfbe/yP9jXs52ZN238ZY9YmssS/+GlvSdvK9tumfzYiLYf9d4+2MpfXvfBdf7LPYeO6KbbMey23fpb/xU/sV+87/WqY5xuc8+dDHIr/n/e79NH2S593P2/hs7GTP0+FisUQSY0P+jBpzX21n55HOq9CvWUsWTwAAAACA/fm5b75Y9H52SM8P7/mhvSbuH8eE3ogZL64/TSJMowgCcr++dVFFgI9NwKgc2m5mXXxZFm0KUZw4RgCZ2naCRiAVX6K9MkY2x9ynETtPg7Rvto8WX9L1ckTyOdLVu3WZrK+1+syf6Z60TdZ2guyV/h8NzfH+H+lv3MvJnrT7NsYqS2TbPWm7nORWsu8AuTfFyfsXx3P+dLZivLfnWtq0+GzEctP3HH22Sw269WN9CP4r2T3vd7e+bZ/M38Xv2uK7t7VCujcD6TOYWV1DU98yn1kIsqWfR7ZmZ7J4AgAAAADsz/7iy3hAnu0Uu63Nl5u35uA8JxQuARAbXTIgdvLkQYWBl+UtFUWT+1e9GKECxHh/EgJEbJB24Q2QQ9qp6NCuN8SXVOiYseKEfk5FlDKGqxM/pzGWhROlE19K3Hp7sw2tbzHQOhunI//NF1u/Ib7kydkRyedIV+8Swo0EPNYvJJy69sc1uZz0zVh/1hPFgvf/SH/jXnZtC9aHGKvUP4mBzHUr8RY0Xv13QC6+BF9b2+ZP57vM1foQ+0u991/nd+iz3/R9AbGx1CbOQds2H6L/QnbP+92tb9enj4F+v079x3rTt7e1wsJemClju/jdGNvaP8R/IvYNdGthZn1PZfEEAAAAANifO4sv7XDsxJWarEwH+3pAfq+H/VrswV4Tj7mu2dHkoLaTz91BWcZZOHjHZL+JHb0Q0YsgnQChHNDuKPFlRK9HG1OZxYZJnOjalFLmUceQf9NmqrNiiFD8tn0nnxLxpdmc2o8+qJBVjTrxRajiTGc72nHPwsyvsSq+yDrMkjNZe4cmn0m9S9y8LWWjviSv2VrOfA107co+Wk4Wo//H+hv2smtbsMlqF6u4p5Vi08d8hclGtaP/d6H2XZL4Z9peXhl/Ot9lrvY7KdhSSnwnm13/tViOrPq+jMYxHbfGrt2/emt8yPxfmtPs99b693OQ+7Z/8CesjVXUboiFe375XOb6JPaLfQPdWphBfAEAAACAc2RBfDkRKwfkg8gO9yPrh2s4DYmIdN/86Pq5Tx6Srz8MCeyDZuF7FQAAAAAA9uOsxRf5jW4vssTfdsMe6Bsq4a2V+yZ96+ksKW9XPBYxQt+0eDRC0z+N+vbJoW8tAQAAAADASTjvN1/g3ihiy/KfC0FO+xOkR/Em1vTnK4ifD4f4pz5jQXgBAAAAALh39hVfAAAAAAAAAAAeOYgvAAAAAAAAAAA7gvgCAAAAAAAAALAjiC8AAAAAAAAAADuC+AIAAAAAAAAAsAP//fv78Odf34cnN79/GygUCoVCoVAoFAqFQqFQKHuUb8P/ASFhSWn69BlbAAAAAElFTkSuQmCC" InformativeScreenshot="09c52856dc117eb73ba3f842cfa1a7aa.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds - G*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NGetText DisplayName="Get Text 'Out of stock'" sap:VirtualizedContainerService.HintSize="356.8,165.6" sap2010:WorkflowViewState.IdRef="NGetText_4">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.helzberg.com/infinity-x-infinity-diamond-earrings-1959411/" DesignTimeRectangle="985, 823, 413, 28" FriendlyName="'Out of stock'" FullSelectorArgument="&lt;webctrl tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' /&gt;" InformativeScreenshot="634a34d27cf3e9e42374c11345cc3813.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='20422733' title='Infinity X Infinity® 1/3 ct. tw. Diamond Dangle Earrings in Sterling Silver &amp;amp; 10K Yellow Gold | Helzberg Diamonds' /&gt;" SearchSteps="FuzzySelector" />
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("Verify")]</OutArgument>
+                              </uix:NGetText.Text>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRow.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1608, -2, 1616, 876" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAnGSURBVFhH3dh5UJN3GgdwQMR2hSKg4AEqilZoEZCAXBLCHQQhHHIL4rnj4rbT1t3t1m6tnXrFE7QqV4Rqdcejq3a0gozoSrkV5ZAcKAURgksThClXntnn9+YNeQlBadfuH31mvvO+yeD7fnye9/29SXR+t2Vvb6/jYDLNyN7UeK69ifEi3L5jbzrNCbckuI/vmRhb2U97y4j87f+t7PCEiTbzXJq/yU9siQ45KInhFkuig+sk0dynkihuH+73NUcFtYmjAh+KeIHFknD/A82nBYkJ1pYsW2NDI/owr78M9HR1+SwHj0sBnsfEMcE14hhuj5gXAOIIf2XCMav8ML4gDuOAKMxnJOJwP7kojFN9ie1ydI+jnTs5Fn3Y11M53qxZ18N8jzVHc1skUUH94qggEPMC1bgRIOLoIEiNDMWsZJP0437LNX+PzGxXewv68L++9HR1dA97ODk3x69qkEQFAwmODnHYOVWYwHC6g+MCvUEUguGuwL/xqz/kbOekp6Pz67o5VV//je3O70ZJ4kIb8LpSKIHYOSZQs4MTAVLIFQSpEIf61G+3Xxw5VX/SFPq0Eyv8X+l87GgbLYoJkSAOqDCBkQSpZcQjQA6Vl3VQGS98zRZvt1/EI+eccH2xbAmrLjKg4RHpUmQQjfttgMJgRIb61B10etuRPv3La6vvu+alYb4NNaHeivpwXxAiUMwEUrhxRkyPd9SI1TcIDUSYcsQgQpww2JNEIQllP8xytjWnGdpLd/Ik3cBtEYKr+I/K8QC1eIIG7IooknSS7pw2IOJEuMSIGDAhwqisJGGDEDsnRBgV0jm6e8IgT2ii4gHXOcuPGOjhrTleWWzieCw4vbFl4wcRUITIKjzYw1U+0EQQ1LgJjgbSOBF2VpwWB5L09SD+cItCtG2Loun9NGjcHA31qb5Qn+yF8YSGNSQe0JDiAY24bVzjDo8wTSkky0GY6gbCte4te7wWe9Cc0WUw18zIcmfkMeuv1/c7nEyFQ3G+cBuR93As9dgVIRkho3MiAty8BlpOHIH2WzdBKmqC7i7psKy7a/j5UyE8qyuElpt8EJ+JAkm2CzzOZUGLwAVa812g7bQrdHzjCs//6QqyC67Qc2k59F12g94rbgN3jjh+5WCj5Ylj7PeOy4KvN9ZYF6wHEt6OGDiLYy7FMTwIZcMjMj4eQfqDEHHNn22DzqoK6HzWCeWPZJB7Uw57/iWH3d/KIQf3yxpl0CmVQldzGbQVvQet59yh44I7dF/2gJ7rXvBzoRf0F3vB4C1MyQoYur0CBv/tBUN3vas2Rc5h0SxlkYf54dLzidYFG+TzEUdifyIVPlkXBNcC3aEyBMcUhtcR3jSke82f/RWei7FLXTLgX5FDQmYP8A70QNg+ZSL290DskR7Yi+B2qQy6O4Qgr/gQBkrYMHjHB4bvsmG4FLc/cEBRTuIDikrcVlJbmbQhN2HUBwyDBTOM5p/esH9ufhrMK1g3koBdqyE73AuKAtzgPiIbyA3wxxSQVldAO+L+nN8DoftejMrKvS8ghJE/CXrgKSJlTyugvzoFAf4AVZhqVfzUqeIoc8+Pz7IzMqR5CLSebjmvYH0RATKzJDsVPtgcBJcRWBLoAQ9wzE9OZFBj5WN3tOE0gdw9L2APjl0q7YReYSYMV3MZOAayylcNrPG7gcA5NI8C2iDogSaQxPNAAhzHLhb6u0FlYgS0lxTjNYdjzWDgaBgTR2CqxB7uwWtSDvLWYhi6Hz8WSOEYwGq/+whcSPMooB1i2qzy12oA18J8wVpI/WgVXPV1gYpNydCF1x65IXgHxgdyGcDg3S+o6zK7SA4yqQgGHmzSAGp0Twn8EYF2NI8COiKojwC1ZWFuChyMWQFlW9LgJ7wzd1+SQxhfDVR1baRz9JbgSMj7uy72gKxbCj8/SAfFGJwmkNOHQPWjb7K1mSNCei1PpYK2WGECdq+GovR1ZK2jgAQ2aqx0x5idU4W8/nIMUHVjaOCU6dUE2s3JT23VhlNlXl4K/GNfOnTSI47Yr+7ay4BBmFAccVahasQb1d3TCsSlpsrnR5YtY8QItJl9KqV2DkLGi6UgFbi56VBTfgvK8YKPOzIayIRRWwzBkcQcom+Stlv0TaLCMWGjgPedbRk3CQItEVikicL3YLYgZeS1jSANDhafGuro6BoiizATxgSqOqfKLrwkpF1dQ72i4wPKZWY8oA8VRbXPDQSqlxkEGs4+lbqfYF4V9oW/KO401yrI4rsVF+FX4bbkKhfqjraawe7qjf2KkbEyowGs4fCdmQs1eazw75xLnCVYI8fAyzITk3SDD43PHkN7p4xahMk6t4qP2N3KkGuOjJXcTORvJE8lUFPxGXYtgAZpwtS44Uq2rLM+e/SjjtSbnMWsmXnJVQSgiiaMmaTv+XC7uRZapV1Q1iCj1rkvLypDbgjyXmunFEpE9yDr5k7oraBHOwaohDGAlZsiZzvTLHXpW5kYmX3KPTpTkNxPABZ5yWBBY6h9LfE6/xF8WloA3zWVwaP2x9Dxny4qjbh/taEUPrmZBxzBe3CvJAxPrgkb3Tll2P0/CJZlOiw2VI+XWcZp7u4Wuckt2jDaYp6XRC1BTue2AufSxxB6ZQfmc/A9/zdwyt0CczKTYO/FKBiuevVoEYcfJNgtJ7cvcaM5Wmqynu6Mz0MztEE0M0NLpucmKnMiAaZnxIHTVzEgLV+JJ9cGGwu8d4Z1eIrBSz7ykzLeyrEwz0mqM89LVEwIw4hZbgKY5SDueBzMPhoLZ69FwFDV+OsdQdGdUwxWeD/89vDSl39pUpXRBk9H85zEOq0wkjE4RDGBiFtdEA0td4MZIO04ksFydl3+TjsH+vQTKGyyYZwzb0ZOkphCaWAIhLlPUKaqZMWD3ckYOP99GF57mt1Tj1OVoQq2iP/+wgi9X/TNHUv3Df0pUxE5PSehHjEKAqIwdFQg5j71+mQsJOAXJVlFIAK04ZRRVOFYy9h1iOMZ/eEX/vQxUro6ulM3eDiaZSXWMXGaQJOc+JEsOLkal5VQBDBxTODosWLn/vef4t5M9zY32RGSYZod/8QsJ76fwJgoVYyzYiH9LA9xZFnRQFFfiNj9wxXsJzWnWRkTviEmXPp6ulNTXN3e+ntgpmlWQrVpVpzcJFuNm5YdC0sFsdBVzlUwYYjCbnnLsGPVd/OWZZ7Y/rbbFIPX/AMmsyZZTTOa4m3D2nf7TIJJdhzfJCu+ELG1JsdjW/O+4/00UM7pGyhjtw6Ue9cOlLMLh6p8+M/qshPW82axli76DX8C1izyMJ80z9QQY4WxmTTXxM52sfHSZUsMnTB2GJtltkZW5FPJmAf/76d0dP4LBoHw5hzfa88AAAAASUVORK5CYII=" InformativeScreenshot="f99e1b565adcd75a185935a54f9b122f.png" Selector="&lt;html app='chrome.exe' htmlwindowname='75192150' title='Engagement, Wedding Rings &amp;amp; Fine Jewelry | Helzberg Diamonds'/&gt;" Url="https://www.helzberg.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
